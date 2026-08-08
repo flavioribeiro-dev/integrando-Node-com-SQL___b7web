@@ -13,15 +13,27 @@ enum Funcao {
 }
 
 model User {
-    id        Int      @id @default(autoincrement())
+    id        Int        @id @default(autoincrement())
     nome      String
     sobrenome String?
-    funcao    Funcao   @default(USER)
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+    funcao    Funcao     @default(USER)
+    createdAt DateTime   @default(now())
+    updatedAt DateTime   @updatedAt
     posts     Post[]
+    veiculos  Veiculos[]
 
     @@map("users")
+}
+
+model Veiculos {
+    id             Int    @id @default(autoincrement())
+    modelo         String
+    marca          String
+    anoFabricacao  Int?
+    proprietarioId Int
+    proprietario   User   @relation(fields: [proprietarioId], references: [id])
+
+    @@map("veiculos")
 }
 
 model Post {
