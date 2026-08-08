@@ -1,19 +1,35 @@
 generator client {
     provider = "prisma-client"
-    output   = "../src/generated/prisma"
+    output   = "../generated/prisma"
 }
 
 datasource db {
     provider = "postgresql"
 }
 
+enum Funcao {
+    ADMIN
+    USER
+}
+
 model User {
-    id        Int      @id @default(autoincrement())
+    id        Int        @id @default(autoincrement())
     nome      String
     sobrenome String?
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+    funcao    Funcao     @default(USER)
+    createdAt DateTime   @default(now())
+    updatedAt DateTime   @updatedAt
     posts     Post[]
+    veiculos  Veiculos[]
+}
+
+model Veiculos {
+    id             Int    @id @default(autoincrement())
+    modelo         String
+    marca          String
+    anoFabricacao  Int?
+    proprietarioId Int
+    proprietario   User   @relation(fields: [proprietarioId], references: [id])
 }
 
 model Post {
