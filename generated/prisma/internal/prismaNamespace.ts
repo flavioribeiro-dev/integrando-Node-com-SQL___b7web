@@ -398,7 +398,14 @@ type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRe
 
 export const ModelName = {
   User: 'User',
+<<<<<<< HEAD
   Veiculos: 'Veiculos',
+=======
+<<<<<<< HEAD
+=======
+  Veiculos: 'Veiculos',
+>>>>>>> dev
+>>>>>>> Main
   Post: 'Post'
 } as const
 
@@ -415,7 +422,15 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
+<<<<<<< HEAD
     modelProps: "user" | "veiculos" | "post"
+=======
+<<<<<<< HEAD
+    modelProps: "user" | "post"
+=======
+    modelProps: "user" | "veiculos" | "post"
+>>>>>>> dev
+>>>>>>> Main
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -493,6 +508,11 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
     Veiculos: {
       payload: Prisma.$VeiculosPayload<ExtArgs>
       fields: Prisma.VeiculosFieldRefs
@@ -567,6 +587,10 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
     Post: {
       payload: Prisma.$PostPayload<ExtArgs>
       fields: Prisma.PostFieldRefs
@@ -692,6 +716,11 @@ export const UserScalarFieldEnum = {
 export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
 export const VeiculosScalarFieldEnum = {
   id: 'id',
   modelo: 'modelo',
@@ -703,6 +732,10 @@ export const VeiculosScalarFieldEnum = {
 export type VeiculosScalarFieldEnum = (typeof VeiculosScalarFieldEnum)[keyof typeof VeiculosScalarFieldEnum]
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
 export const PostScalarFieldEnum = {
   id: 'id',
   titulo: 'titulo',
@@ -966,7 +999,14 @@ export interface PrismaClientOptionsWithAdapter extends PrismaClientBaseOptions 
 export type PrismaClientOptions = PrismaClientOptionsWithAccelerateUrl | PrismaClientOptionsWithAdapter
 export type GlobalOmitConfig = {
   user?: Prisma.UserOmit
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosOmit
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosOmit
+>>>>>>> dev
+>>>>>>> Main
   post?: Prisma.PostOmit
 }
 

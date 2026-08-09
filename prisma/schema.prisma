@@ -21,8 +21,16 @@ model User {
     updatedAt DateTime   @updatedAt
     posts     Post[]
     veiculos  Veiculos[]
+<<<<<<< HEAD
 
     @@map("users")
+=======
+<<<<<<< HEAD
+=======
+
+    @@map("users")
+>>>>>>> dev
+>>>>>>> Main
 }
 
 model Veiculos {
@@ -32,8 +40,16 @@ model Veiculos {
     anoFabricacao  Int?
     proprietarioId Int
     proprietario   User   @relation(fields: [proprietarioId], references: [id])
+<<<<<<< HEAD
 
     @@map("veiculos")
+=======
+<<<<<<< HEAD
+=======
+
+    @@map("veiculos")
+>>>>>>> dev
+>>>>>>> Main
 }
 
 model Post {

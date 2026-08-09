@@ -225,7 +225,14 @@ export type UserWhereInput = {
   createdAt?: Prisma.DateTimeFilter<"User"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"User"> | Date | string
   posts?: Prisma.PostListRelationFilter
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosListRelationFilter
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosListRelationFilter
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserOrderByWithRelationInput = {
@@ -236,7 +243,14 @@ export type UserOrderByWithRelationInput = {
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   posts?: Prisma.PostOrderByRelationAggregateInput
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosOrderByRelationAggregateInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosOrderByRelationAggregateInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserWhereUniqueInput = Prisma.AtLeast<{
@@ -250,7 +264,14 @@ export type UserWhereUniqueInput = Prisma.AtLeast<{
   createdAt?: Prisma.DateTimeFilter<"User"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"User"> | Date | string
   posts?: Prisma.PostListRelationFilter
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosListRelationFilter
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosListRelationFilter
+>>>>>>> dev
+>>>>>>> Main
 }, "id">
 
 export type UserOrderByWithAggregationInput = {
@@ -286,7 +307,14 @@ export type UserCreateInput = {
   createdAt?: Date | string
   updatedAt?: Date | string
   posts?: Prisma.PostCreateNestedManyWithoutUsuarioInput
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosCreateNestedManyWithoutProprietarioInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosCreateNestedManyWithoutProprietarioInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserUncheckedCreateInput = {
@@ -297,7 +325,14 @@ export type UserUncheckedCreateInput = {
   createdAt?: Date | string
   updatedAt?: Date | string
   posts?: Prisma.PostUncheckedCreateNestedManyWithoutUsuarioInput
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUncheckedCreateNestedManyWithoutProprietarioInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUncheckedCreateNestedManyWithoutProprietarioInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserUpdateInput = {
@@ -307,7 +342,14 @@ export type UserUpdateInput = {
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   posts?: Prisma.PostUpdateManyWithoutUsuarioNestedInput
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUpdateManyWithoutProprietarioNestedInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUpdateManyWithoutProprietarioNestedInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserUncheckedUpdateInput = {
@@ -318,7 +360,14 @@ export type UserUncheckedUpdateInput = {
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   posts?: Prisma.PostUncheckedUpdateManyWithoutUsuarioNestedInput
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUncheckedUpdateManyWithoutProprietarioNestedInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUncheckedUpdateManyWithoutProprietarioNestedInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserCreateManyInput = {
@@ -411,6 +460,11 @@ export type IntFieldUpdateOperationsInput = {
   divide?: number
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
 export type UserCreateNestedOneWithoutVeiculosInput = {
   create?: Prisma.XOR<Prisma.UserCreateWithoutVeiculosInput, Prisma.UserUncheckedCreateWithoutVeiculosInput>
   connectOrCreate?: Prisma.UserCreateOrConnectWithoutVeiculosInput
@@ -425,6 +479,10 @@ export type UserUpdateOneRequiredWithoutVeiculosNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutVeiculosInput, Prisma.UserUpdateWithoutVeiculosInput>, Prisma.UserUncheckedUpdateWithoutVeiculosInput>
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
 export type UserCreateNestedOneWithoutPostsInput = {
   create?: Prisma.XOR<Prisma.UserCreateWithoutPostsInput, Prisma.UserUncheckedCreateWithoutPostsInput>
   connectOrCreate?: Prisma.UserCreateOrConnectWithoutPostsInput
@@ -439,6 +497,11 @@ export type UserUpdateOneRequiredWithoutPostsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutPostsInput, Prisma.UserUpdateWithoutPostsInput>, Prisma.UserUncheckedUpdateWithoutPostsInput>
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
 export type UserCreateWithoutVeiculosInput = {
   nome: string
   sobrenome?: string | null
@@ -493,13 +556,24 @@ export type UserUncheckedUpdateWithoutVeiculosInput = {
   posts?: Prisma.PostUncheckedUpdateManyWithoutUsuarioNestedInput
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
 export type UserCreateWithoutPostsInput = {
   nome: string
   sobrenome?: string | null
   funcao?: $Enums.Funcao
   createdAt?: Date | string
   updatedAt?: Date | string
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosCreateNestedManyWithoutProprietarioInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosCreateNestedManyWithoutProprietarioInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserUncheckedCreateWithoutPostsInput = {
@@ -509,7 +583,14 @@ export type UserUncheckedCreateWithoutPostsInput = {
   funcao?: $Enums.Funcao
   createdAt?: Date | string
   updatedAt?: Date | string
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUncheckedCreateNestedManyWithoutProprietarioInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUncheckedCreateNestedManyWithoutProprietarioInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserCreateOrConnectWithoutPostsInput = {
@@ -534,7 +615,14 @@ export type UserUpdateWithoutPostsInput = {
   funcao?: Prisma.EnumFuncaoFieldUpdateOperationsInput | $Enums.Funcao
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUpdateManyWithoutProprietarioNestedInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUpdateManyWithoutProprietarioNestedInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserUncheckedUpdateWithoutPostsInput = {
@@ -544,7 +632,14 @@ export type UserUncheckedUpdateWithoutPostsInput = {
   funcao?: Prisma.EnumFuncaoFieldUpdateOperationsInput | $Enums.Funcao
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+<<<<<<< HEAD
   veiculos?: Prisma.VeiculosUncheckedUpdateManyWithoutProprietarioNestedInput
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: Prisma.VeiculosUncheckedUpdateManyWithoutProprietarioNestedInput
+>>>>>>> dev
+>>>>>>> Main
 }
 
 
@@ -554,12 +649,26 @@ export type UserUncheckedUpdateWithoutPostsInput = {
 
 export type UserCountOutputType = {
   posts: number
+<<<<<<< HEAD
   veiculos: number
+=======
+<<<<<<< HEAD
+=======
+  veiculos: number
+>>>>>>> dev
+>>>>>>> Main
 }
 
 export type UserCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   posts?: boolean | UserCountOutputTypeCountPostsArgs
+<<<<<<< HEAD
   veiculos?: boolean | UserCountOutputTypeCountVeiculosArgs
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: boolean | UserCountOutputTypeCountVeiculosArgs
+>>>>>>> dev
+>>>>>>> Main
 }
 
 /**
@@ -579,6 +688,11 @@ export type UserCountOutputTypeCountPostsArgs<ExtArgs extends runtime.Types.Exte
   where?: Prisma.PostWhereInput
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
 /**
  * UserCountOutputType without action
  */
@@ -586,6 +700,10 @@ export type UserCountOutputTypeCountVeiculosArgs<ExtArgs extends runtime.Types.E
   where?: Prisma.VeiculosWhereInput
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
 
 export type UserSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
@@ -595,7 +713,14 @@ export type UserSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   createdAt?: boolean
   updatedAt?: boolean
   posts?: boolean | Prisma.User$postsArgs<ExtArgs>
+<<<<<<< HEAD
   veiculos?: boolean | Prisma.User$veiculosArgs<ExtArgs>
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: boolean | Prisma.User$veiculosArgs<ExtArgs>
+>>>>>>> dev
+>>>>>>> Main
   _count?: boolean | Prisma.UserCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["user"]>
 
@@ -629,7 +754,14 @@ export type UserSelectScalar = {
 export type UserOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome" | "sobrenome" | "funcao" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
 export type UserInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   posts?: boolean | Prisma.User$postsArgs<ExtArgs>
+<<<<<<< HEAD
   veiculos?: boolean | Prisma.User$veiculosArgs<ExtArgs>
+=======
+<<<<<<< HEAD
+=======
+  veiculos?: boolean | Prisma.User$veiculosArgs<ExtArgs>
+>>>>>>> dev
+>>>>>>> Main
   _count?: boolean | Prisma.UserCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type UserIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
@@ -639,7 +771,14 @@ export type $UserPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
   name: "User"
   objects: {
     posts: Prisma.$PostPayload<ExtArgs>[]
+<<<<<<< HEAD
     veiculos: Prisma.$VeiculosPayload<ExtArgs>[]
+=======
+<<<<<<< HEAD
+=======
+    veiculos: Prisma.$VeiculosPayload<ExtArgs>[]
+>>>>>>> dev
+>>>>>>> Main
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
@@ -1043,7 +1182,14 @@ readonly fields: UserFieldRefs;
 export interface Prisma__UserClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
   posts<T extends Prisma.User$postsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$postsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$PostPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+<<<<<<< HEAD
   veiculos<T extends Prisma.User$veiculosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$veiculosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$VeiculosPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+=======
+<<<<<<< HEAD
+=======
+  veiculos<T extends Prisma.User$veiculosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$veiculosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$VeiculosPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+>>>>>>> dev
+>>>>>>> Main
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1496,6 +1642,11 @@ export type User$postsArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs
 }
 
 /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Main
  * User.veiculos
  */
 export type User$veiculosArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1520,6 +1671,10 @@ export type User$veiculosArgs<ExtArgs extends runtime.Types.Extensions.InternalA
 }
 
 /**
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> Main
  * User without action
  */
 export type UserDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
