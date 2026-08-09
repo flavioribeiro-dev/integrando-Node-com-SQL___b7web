@@ -13,11 +13,6 @@ router.post('/usuarios', (req, res) => {
     return res.json({ user })
 })
 
-router.get('/usuarios', (req, res) => {
-    const users = prisma.user.findMany();
-    res.json({ users });
-})
-
 router.get('/', (req, res) => {
     res.send('página inicial')
 })
