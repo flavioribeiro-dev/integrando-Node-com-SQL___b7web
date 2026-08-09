@@ -47,6 +47,14 @@ export { Prisma }
  */
 export type User = Prisma.UserModel
 /**
+<<<<<<< HEAD
+=======
+ * Model Veiculos
+ * 
+ */
+export type Veiculos = Prisma.VeiculosModel
+/**
+>>>>>>> dev
  * Model Post
  * 
  */
