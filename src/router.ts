@@ -1,16 +1,14 @@
 import { Router } from "express";
-import prisma from "./libs/prisma.js";
+import { createUser } from "./services/user.js";
 
 const router = Router();
 
-router.post('/usuarios', (req, res) => {
-    const user = prisma.user.create({
-        data: {
-            nome: "Henrique",
-            sobrenome: "Ribeiro",
-        }
-    })
-    return res.json({ user })
+router.post('/usuarios', async (req, res) => {
+    const user = createUser({ 
+        nome: 'Charlotte', 
+        sobrenome: 'Ribeirinha'
+    });
+    return user;
 })
 
 router.get('/', (req, res) => {
