@@ -1,20 +1,17 @@
-import prisma from "../libs/prisma.js"
+import type { Prisma } from "../../generated/prisma/client.js";
+import { PrismaClientKnownRequestError } from "../../generated/prisma/internal/prismaNamespace.js";
+import prisma from "../libs/prisma.js";
 
-// export const createUser = async (nome: string, sobrenome: string) => {
-
-//     const user = await prisma.user.create({
-//         data: { nome, sobrenome }
-//     })
-//     return user;
-
-// }
-
-type createUserProps = {
-    nome: string,
-    sobrenome: string
-}
-export const createUser = async ( { nome, sobrenome }: createUserProps ) => {
-    const user = await prisma.user.create({
-        data: { nome, sobrenome }
-    })
+export const createUser = async (data: Prisma.UserCreateInput) => {
+    try {
+        const user = await prisma.user.create({ data })
+        return user;
+    } catch (error) {
+        if(error instanceof PrismaClientKnownRequestError) {
+            if(error.code === 'P2002') {
+                return ({ error: 'email já cadastrado' })
+            }
+        }
+        return false;
+    }
 }
