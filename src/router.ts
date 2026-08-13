@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createUser, createUsers } from "./services/user.js";
+import { createUser, createUsers, getAllUsers } from "./services/user.js";
 import { count } from "node:console";
 
 const router = Router();
@@ -29,6 +29,10 @@ router.post('/users', async (req, res) => {
         { nome: 'Coringa', sobrenome: 'Gomes', email: 'coring@yahoo.com' },
     ]);
     res.json({ result });
+})
+router.get('/users', async (req, res) => {
+    const result = await getAllUsers();
+    res.json({ result })
 })
 
 
