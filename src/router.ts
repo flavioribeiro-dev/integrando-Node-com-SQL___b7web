@@ -7,7 +7,15 @@ const router = Router();
 router.post('/user', async (req, res) => {
     // Validar os dados de entrada...
 
-    const user = await createUser({ nome: 'Marcio', sobrenome: 'da Silva F', email: 'marcio@email.com' });
+    const user = await createUser({ 
+        nome: 'Flavio', sobrenome: 'Ribeirão', email: 'flavioxconsult123@email.com', funcao: "ADMIN",
+        posts: {
+            create: {
+                titulo: 'O melhor texto do mundo',
+                Subtitulo: 'excelente texto'
+            }
+        }
+    });
     if(user) {
         return res.status(201).json({ user });
     }
